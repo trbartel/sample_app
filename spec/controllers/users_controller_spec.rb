@@ -25,7 +25,7 @@ describe UsersController do
     end
     
     it "should include the user's name" do
-      get :show, :id > @user
+      get :show, :id => @user
       response.should have_selector("h1", :content => @user.name)
     end
     
