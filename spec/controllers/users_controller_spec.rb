@@ -274,7 +274,6 @@ describe "PUT 'update'" do
         response.should redirect_to(signin_path)
       end
     end
-  end
   
     describe "for signed-in users" do
 
