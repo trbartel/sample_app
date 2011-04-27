@@ -9,6 +9,7 @@ group :development do
   gem 'rspec-rails', '2.5.0'
   gem 'annotate-models', '1.0.4'
   gem 'faker', '0.3.1'
+  gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 end
 
 group :test do
@@ -17,6 +18,12 @@ group :test do
   gem 'spork', '0.9.0.rc4'
   gem 'factory_girl_rails', '1.0'	
 end
+
+# recommended by heroku technician
+group :production do
+  gem 'faker', '0.3.1'
+end
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
