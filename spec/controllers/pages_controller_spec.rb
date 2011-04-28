@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
-  
+
   before(:each) do
     @base_title = "Ruby on Rails Tutorial Sample App"
   end
@@ -45,8 +45,6 @@ describe PagesController do
 
   end
 
-
-# The following are GET direction for CONTACT, ABOUT and HELP pages
   describe "GET 'contact'" do
     it "should be successful" do
       get 'contact'
